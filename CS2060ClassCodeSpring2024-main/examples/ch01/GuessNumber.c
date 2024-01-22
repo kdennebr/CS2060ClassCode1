@@ -17,7 +17,7 @@ bool isCorrect(int guess, int answer);
 
 int main(void) {
     //random number based on current time
-   srand(time(0)); 
+   //srand(time(0));
 
    //runs guessGame function
    guessGame();
