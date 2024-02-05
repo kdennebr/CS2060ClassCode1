@@ -21,20 +21,30 @@ int main(void) {
     
     printf("%f" , averageLengthWidth);
     
-    area = length * width;
+    //area = length * width;
     
-    printf("Length: %d Width: %d Area %d\n", length, width, area);
+     area = calculateArea((double)length, (double)width);
+    
+    printf("Length: %d Width: %d Area %f\n", length, width, area);
     
     return(0);
    //printf("Welcome to C!\n");
 } // end function main
+
+double calculateArea(double length, double width){
+    double area = 0.0;
+    
+    area = length * width;
+    
+    return area;
+}
 
 
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *
  * Pearson Education, Inc. All Rights Reserved.                           *
- *                                                                        *
+ *                                                   *
  * DISCLAIMER: The authors and publisher of this book have used their     *
  * best efforts in preparing the book. These efforts include the          *
  * development, research, and testing of the theories and programs        *
